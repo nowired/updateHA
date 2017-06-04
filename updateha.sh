@@ -1,8 +1,8 @@
 #!/bin/bash
 
-touch updateha2.sh
+touch /tmp/updateha2.sh
 
-printf "#!/bin/bash\n\nsource /srv/homeassistant/homeassistant_venv/bin/activate\npip3 install --upgrade homeassistant\nexit"
+printf "#!/bin/bash\n\nsource /srv/homeassistant/homeassistant_venv/bin/activate\npip3 install --upgrade homeassistant\nexit" > /tmp/updateha2.sh
 
 chmod +x /tmp/updateha2.sh
 
