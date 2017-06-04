@@ -9,3 +9,5 @@ chmod +x /tmp/updateha2.sh
 sudo su -s /bin/bash homeassistant -c /tmp/updateha2.sh
 
 rm /tmp/updateha2.sh
+
+sudo service home-assistant restart
